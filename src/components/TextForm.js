@@ -48,10 +48,10 @@ export default function Textform(props) {
       <button disabled={text.length===0} type="submit" className="btn btn-primary mx-1 my-1" onClick={handleloClick}>Convert To LowerCase</button>
       <button disabled={text.length===0} type="submit" className="btn btn-primary mx-1 my-1" onClick={handleCopyText}>Copy to clipboard</button>
       <button disabled={text.length===0} type="submit" className="btn btn-primary mx-1 my-1" onClick={handleClear}>Clear Text</button>
-      <button className="btn btn-primary dropdown-toggle my-1 mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" disabled={text.length===0} >
+      <button className="btn btn-primary dropdown-toggle my-1 mx-1 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" disabled={text.length===0} >
         Change Font
       </button>
-        <ul className="dropdown-menu">
+        <ul className="dropdown-menu scrollable-dropdown">
             <li><button className="dropdown-item" onClick={() => setTextFont("Arial")}>Arial</button></li>
             <li><button className="dropdown-item" onClick={() => setTextFont("Verdana")}>Verdana</button></li>
             <li><button className="dropdown-item" onClick={() => setTextFont("Tahoma")}>Tahoma</button></li>
